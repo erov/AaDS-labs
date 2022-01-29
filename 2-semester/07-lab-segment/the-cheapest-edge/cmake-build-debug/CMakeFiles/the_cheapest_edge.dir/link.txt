@@ -1,0 +1,3 @@
+C:\Users\11\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\211.7142.21\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\the_cheapest_edge.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\the_cheapest_edge.dir/objects.a @CMakeFiles\the_cheapest_edge.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\the_cheapest_edge.dir/objects.a -Wl,--no-whole-archive -o the_cheapest_edge.exe -Wl,--out-implib,libthe_cheapest_edge.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\the_cheapest_edge.dir\linklibs.rsp

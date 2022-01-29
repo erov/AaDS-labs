@@ -1,0 +1,3 @@
+C:/Users/11/Desktop/hw/AaDS/2-semester/07-lab-segment/cryptography/cmake-build-debug/CMakeFiles/cryptography.dir
+C:/Users/11/Desktop/hw/AaDS/2-semester/07-lab-segment/cryptography/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/11/Desktop/hw/AaDS/2-semester/07-lab-segment/cryptography/cmake-build-debug/CMakeFiles/rebuild_cache.dir

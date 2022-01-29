@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/11/Desktop/hw/AaDS/2-semester/07-lab-segment/rectangles/main.cpp
+climits
+-
+cmath
+-
+iostream
+-
+vector
+-
+

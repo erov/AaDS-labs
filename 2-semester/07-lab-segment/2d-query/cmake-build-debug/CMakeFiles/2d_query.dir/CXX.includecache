@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/11/Desktop/hw/AaDS/2-semester/07-lab-segment/2d-query/main.cpp
+algorithm
+-
+cassert
+-
+ctime
+-
+iostream
+-
+vector
+-
+

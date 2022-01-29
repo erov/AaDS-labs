@@ -1,0 +1,3 @@
+C:\Users\11\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\211.7142.21\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\sparce_table.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\sparce_table.dir/objects.a @CMakeFiles\sparce_table.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\sparce_table.dir/objects.a -Wl,--no-whole-archive -o sparce_table.exe -Wl,--out-implib,libsparce_table.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\sparce_table.dir\linklibs.rsp
