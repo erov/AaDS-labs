@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+
+4-semester/input.txt
+4-semester/output.txt
+4-semester/*.exe
+4-semester/*.out
