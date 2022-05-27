@@ -51,8 +51,6 @@ int get_min_cost(int a, int b) {
 }
 
 int main() {
-//    freopen("input.txt", "r", stdin);
-//    clock_t timer = clock();
 
     int n;
     cin >> n;
@@ -73,6 +71,4 @@ int main() {
         --u, --v;
         cout << get_min_cost(u, v) << '\n';
     }
-
-//    cout << "\nwork time: " << (float) (clock() - timer) / CLOCKS_PER_SEC << " s";
 }

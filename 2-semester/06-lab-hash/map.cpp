@@ -1,4 +1,3 @@
-// #pragma GCC optimize("Ofast")
 #include <iostream>
 #include <cmath>
 #include <vector>
@@ -16,8 +15,6 @@
 #include <bitset>
 #include <stack>
 #include <climits>
-
-// continue push_back setprecision __builtin_popcount
 
 using namespace std;
 
@@ -103,11 +100,8 @@ string get(vector<vector<pair<int, string>>> &store, string &x) {
 int get_hash(string x, int poly, int mod) {
 	ll hash = 0;
 	for (auto it : x) {
-		// cout << hash * poly + it - 'A' - 1 << ' ';
 		hash = (hash * poly + it - 'A' + 1) % (1LL * mod);
-		// cout << hash << ' ';
 	}
-	// cout << '\n';
 	return (int) hash;
 }
 

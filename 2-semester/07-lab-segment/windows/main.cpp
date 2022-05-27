@@ -119,8 +119,7 @@ int recover_coordinate(unordered_map<int, int> &source, int coord) {
 }
 
 int main() {
-//    freopen("input.txt", "r", stdin);
-
+    
     int n;
     cin >> n;
 

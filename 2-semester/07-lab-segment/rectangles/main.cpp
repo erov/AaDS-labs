@@ -59,7 +59,6 @@ int next_query(long long a, long long b, long long v0) {
 }
 
 int main() {
-//    freopen("input.txt", "r", stdin);
 
     int n, m;
     cin >> n >> m;
@@ -117,8 +116,6 @@ int main() {
 
         long long current = (long long) (max(_x2 - _x1, 0)) * (long long) (max(_y2 - _y1, 0));
         ans = (ans + current) % MOD;
-
-//        cout << current << '\n';
     }
 
     cout << ans;

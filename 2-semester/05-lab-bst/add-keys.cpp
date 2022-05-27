@@ -1,4 +1,3 @@
-// #pragma GCC optimize("Ofast")
 #include <iostream>
 #include <cmath>
 #include <vector>
@@ -16,8 +15,6 @@
 #include <bitset>
 #include <stack>
 #include <climits>
-
-// continue push_back setprecision __builtin_popcount
 
 using namespace std;
 
@@ -128,7 +125,7 @@ int dsu_get(vector<int> &p, int v) {
 	return (v == p[v] ? v : p[v] = dsu_get(p, p[v]));
 }
 
-void dsu_unite(vector<int> &p, int a, int b) {  // a -> b
+void dsu_unite(vector<int> &p, int a, int b) { 
 	a = dsu_get(p, a);
 	b = dsu_get(p, b);
 	p[a] = b;
@@ -161,12 +158,6 @@ void solve() {
 		a = treap_split(root, pos - 1);
 		root = treap_merge(a.first, treap_merge(new node(i), a.second));
 		dsu_unite(p, actual_pos, actual_pos + 1);
-
-		// cout << actual_pos << '\n';
-		// for (int j = 0; j < 10; j++) {
-		// 	cout << j << ' ' << p[j] << '\n';
-		// }
-		// cout << '\n';
 	}
 
 	vector<int> ans;

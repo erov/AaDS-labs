@@ -15,8 +15,8 @@ struct query {
     }
 };
 
+
 int main() {
-//    freopen("input.txt", "r", stdin);
 
     int n, m;
     cin >> n >> m;
@@ -34,10 +34,6 @@ int main() {
     }
 
     sort(q.begin(), q.end());
-
-//    for (int i = 0; i < m; i++) {
-//        cout << q[i].l << ' ' << q[i].r << '\n';
-//    }
 
     const int MAXN = 1000000 + 47;
     auto* cnt = (int*) calloc(sizeof(int), MAXN);

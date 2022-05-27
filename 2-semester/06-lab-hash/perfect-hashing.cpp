@@ -1,4 +1,3 @@
-// #pragma GCC optimize("Ofast")
 #include <iostream>
 #include <cmath>
 #include <vector>
@@ -102,27 +101,17 @@ void solve() {
 	unsigned int n;
 	cin >> n;
 
-	// mt19937 gen(3001);
-	// set<unsigned int> b;
 	vector<unsigned int> a(n);
 	for (int i = 0; i < (int) n; i++) {
 		cin >> a[i];
-		// do {
-		// 	a[i] = gen();
-		// 	a[i] %= (int) 1e9 + 1;
-		// } while (b.count(a[i]));
-		// b.insert(a[i]);
 	}
 
 	unsigned int m = 10 * n;
 	vector<vector<pair<int, int>>> g;
 	unsigned int p1, p2, add1, add2;
 	mt19937 rnd(10 * n);
-	// int cnt = 0;
 	
 	while (true) {
-		// cnt++;
-		// cerr << cnt << '\n';
 		p1 = 1;
 		p2 = rnd();
 		add1 = rnd() % n;
@@ -154,7 +143,7 @@ void solve() {
 			break;
 		}
 	}
-	// cout << "ok! " << cnt << " repeats\n";
+
 	vector<unsigned int> value(m, 0);
 	vector<bool> used(m, false);
 	for (int i = 0; i < (int) m; i++) {
@@ -164,24 +153,13 @@ void solve() {
 		}
 	}
 
-	// bool ok = true;
 	set<unsigned int> result;
 	for (int i = 0; i < (int) n; i++) {
 		unsigned int h1 = get_hash(a[i], p1, add1, m);
 		unsigned int h2 = get_hash(a[i], p2, add2, m);
 		unsigned int val = (value[h1] ^ value[h2]);
-		// if (val != i) {
-		// 	ok = false;
-		// }
 		result.insert(val);
 	}
-
-	// for (int i = 0; i < m; i++) {
-	// 	cout << value[i] << '\n';
-	// }
-
-	// cout << p1 << ' ' << p2 << ' ' << m << '\n';
-	// cout << n << ' ' << size(result) << ' ' << (ok ? "ok" : ":(") << '\n';
 
 	/*
 		r0 - input 
@@ -218,8 +196,6 @@ void solve() {
 
 		ff =1
 	*/
-
-	// cout << "offset: " << 6 * 3 + 5 * 4 + 6 + 4 * 6 + 3 * 2 + 4 + 1 << '\n';
 
 	string init = "3101" + get_hex(p1) +
 				"3102" + get_hex(p2) +

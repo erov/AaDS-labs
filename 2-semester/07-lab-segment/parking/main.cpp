@@ -57,7 +57,6 @@ private:
 };
 
 int main() {
-//    freopen("input.txt", "r", stdin);
 
     int n, m;
     cin >> n >> m;
@@ -95,8 +94,5 @@ int main() {
             cout << pos + 1 << '\n';
             tree->update(0, n, 0, pos, 47);
         }
-
-//        tree->show(0, n, 0);
-//        cout << '\n';
     }
 }

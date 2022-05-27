@@ -1,4 +1,3 @@
-// #pragma GCC optimize("Ofast")
 #include <iostream>
 #include <cmath>
 #include <vector>
@@ -87,17 +86,6 @@ void add_item(string &str, int value) {
 		store[hash].push_back({str, value});
 	}
 }
-
-// void remove_item(string &str) {
-// 	int hash = get_hash(str, P, MOD);
-// 	for (int i = 0; i < size(store[hash]); i++) {
-// 		if (store[hash][i].f == str) {
-// 			swap(store[hash][i], store[hash].back());
-// 			store[hash].pop_back();
-// 			return;
-// 		}
-// 	}
-// }
 
 void bfs(vector<vector<int>> &g, vector<int> &dist, int start) {
 	queue<int> q;

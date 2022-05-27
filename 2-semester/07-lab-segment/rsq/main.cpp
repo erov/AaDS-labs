@@ -46,9 +46,8 @@ private:
     long long* tree = (long long*) malloc(sizeof(long long) * 2000000);
 };
 
-int main() {
 
-//    freopen("input.txt", "r", stdin);
+int main() {
 
     int n;
     cin >> n;

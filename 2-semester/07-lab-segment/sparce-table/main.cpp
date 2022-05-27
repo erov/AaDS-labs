@@ -20,7 +20,6 @@ int main() {
 
     for (int i = 1; i < n; i++) {
         table[0][i] = (23 * table[0][i - 1] + 21563) % 16714589;
-//        table[0][i] = i + 1;
     }
 
     for (int j = 1; j < MAXL; j++) {
@@ -33,12 +32,6 @@ int main() {
         }
     }
 
-//    for (int i = 0; i < 5; i++) {
-//        for (int j = 0; j < n; j++) {
-//            cout << table[i][j] << ' ';
-//        }
-//        cout << '\n';
-//    }
 
     int u, v;
     cin >> u >> v;
@@ -46,11 +39,6 @@ int main() {
     int ans = 47;
     for (int i = 1; i <= m; i++) {
         ans = get_min(table, min(u, v) - 1, max(u, v) - 1);
-//        ans = 1e9;
-//        for (int j = min(u, v) - 1; j <= max(u, v) - 1; j++) {
-//            ans = min(ans, table[0][j]);
-//        }
-//        cout << u << ' ' << v << ' ' << ans << '\n';
         if (i != m) {
             u = ((17 * u + 751 + ans + 2 * i) % n) + 1;
             v = ((13 * v + 593 + ans + 5 * i) % n) + 1;

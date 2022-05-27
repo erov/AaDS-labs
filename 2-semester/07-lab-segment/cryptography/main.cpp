@@ -55,8 +55,6 @@ private:
 
 int main() {
 
-//    freopen("input.txt", "r", stdin);
-
     int MOD, n, m;
     cin >> MOD >> n >> m;
 

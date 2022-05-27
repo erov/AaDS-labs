@@ -40,7 +40,6 @@ int lca(vector<vector<int>> &ancestor, vector<int> &h, int a, int b) {
 }
 
 int main() {
-//    freopen("input.txt", "r", stdin);
 
     const int MAXN = 500'000 + 47;
     vector<vector<int>> ancestor(MAXN, vector<int> (MAXLOG));

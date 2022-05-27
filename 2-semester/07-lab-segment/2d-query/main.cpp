@@ -58,8 +58,6 @@ unsigned int nextRand24() {
 }
 
 int main() {
-//    freopen("input.txt", "r", stdin);
-//    clock_t timer = clock();
 
     int q;
     cin >> q >> a >> b;
@@ -88,6 +86,4 @@ int main() {
     }
 
     cout << ans;
-
-//    cout << "\nwork time: " << (float) (clock() - timer) / CLOCKS_PER_SEC << " s";
 }

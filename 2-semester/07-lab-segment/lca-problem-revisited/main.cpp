@@ -52,8 +52,6 @@ void dfs(vector<vector<int>> &g, int v, int p = -1) {
 }
 
 int main() {
-//    freopen("input.txt", "r", stdin);
-//    clock_t timer = clock();
 
     int n, m;
     cin >> n >> m;
@@ -83,5 +81,4 @@ int main() {
 
     cout << ans;
 
-//    cout << "\nwork time: " << (float) (clock() - timer) / CLOCKS_PER_SEC << " s";
 }

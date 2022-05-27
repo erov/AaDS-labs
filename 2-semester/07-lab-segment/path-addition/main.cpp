@@ -131,7 +131,6 @@ int main() {
             int v, u, d;
             cin >> v >> u >> d;
             --u, --v;
-//            cout << '=' << pos[u].first << ' ' << pos[v].second << '\n';
             int anc = lca(u, v);
             t->add(pos[anc].second, -d);
             t->add(pos[u].first, d);

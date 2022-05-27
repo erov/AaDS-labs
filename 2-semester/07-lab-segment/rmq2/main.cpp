@@ -126,8 +126,6 @@ private:
 
 int main() {
 
-//    freopen("input.txt", "r", stdin);
-
     int n;
     cin >> n;
 
@@ -149,8 +147,6 @@ int main() {
             int l, r, x;
             cin >> l >> r >> x;
             tree->update(0, n, 0, l - 1, r, x, (op == "add"));
-//            tree->dump(0, n, 0);
-//            cout << '\n';
         }
     }
 }

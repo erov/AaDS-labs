@@ -1,4 +1,3 @@
-// #pragma GCC optimize("Ofast")
 #include <iostream>
 #include <cmath>
 #include <vector>
@@ -135,13 +134,11 @@ void print(int id, int key_hash) {
 
 void print_prev(int id, int key_hash) {
 	int i = find_key(id, key_hash);
-	// assert (i != -1);
 	cout << (i != -1 && store[id][i]->prev ? store[id][i]->prev->value : "none") << '\n';
 }
 
 void print_next(int id, int key_hash) {
 	int i = find_key(id, key_hash);
-	// assert (i != -1);
 	cout << (i != -1 && store[id][i]->nxt ? store[id][i]->nxt->value : "none") << '\n';
 }
 
