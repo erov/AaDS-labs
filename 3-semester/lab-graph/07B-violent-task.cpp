@@ -56,12 +56,7 @@ void solve() {
             }
         }
     }
-
-    // for (uint32_t i : g) {
-    //     cout << i << ' ';
-    // }
-    // cout << '\n';
- 
+    
     if (g[n] != 0) {
         cout << "Schtirlitz\n";
         for (size_t i = 0; i != n; ++i) {

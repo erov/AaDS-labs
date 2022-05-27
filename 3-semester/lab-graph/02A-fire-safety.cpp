@@ -106,7 +106,7 @@ void solve() {
         if (strong_g[v].empty()) {
             ans.push_back(ambassador[v]);
         }
-    } //
+    } 
 
     cout << ans.size() << '\n';
     for (size_t v : ans) {

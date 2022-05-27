@@ -105,6 +105,16 @@
 2-semester/07-lab-segment/rectangles/cmake*
 
 
+3-semester/lab-graph/input.txt
+3-semester/lab-graph/output.txt
+3-semester/lab-graph/*.exe
+3-semester/lab-graph/*.out
+
+3-semester/lab-string/input.txt
+3-semester/lab-string/output.txt
+3-semester/lab-string/*.exe
+3-semester/lab-string/*.out
+
 
 4-semester/input.txt
 4-semester/output.txt

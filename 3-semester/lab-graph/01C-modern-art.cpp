@@ -82,14 +82,6 @@ void solve() {
         g[u].push_back(v ^ 1);
     }
 
-    // for (size_t i = 0; i != n * 2; ++i) {
-    //     cout << (i % 2 == 0 ? "left " : "right ") << i << ": ";
-    //     for (size_t to : g[i]) {
-    //         cout << to << ' ';
-    //     }
-    //     cout << '\n';
-    // }
-
     vector<uint32_t> used(n * 2, 0);
     vector<size_t> order;
 

@@ -160,14 +160,11 @@ void solve() {
     for (size_t i = 0; i != k; ++i) {
         size_t j = i * 2;
         if (color[j] > color[j ^ 1]) {
-            // cout << j << ' ';
             if (preference_list[i].second) {
                 visit.insert(preference_list[i].first);
             }
         }
     }
-
-    // cout << '\n';
 
     cout << visit.size() << '\n';
     for (size_t city : visit) {

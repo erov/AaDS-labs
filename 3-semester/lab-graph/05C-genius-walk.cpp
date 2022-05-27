@@ -73,7 +73,7 @@ void solve() {
             uint64_t k = dist[v] / (a + b);
             uint64_t upper = (a + b) * k + a;
             uint64_t lower = (a + b) * k;
-            // cout << v << ' ' << to << ' ' << lower << ' ' << upper << '\n';
+            
             if (upper - lower < d) {
                 continue;
             }

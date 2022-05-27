@@ -74,39 +74,22 @@ void solve() {
         rev_hash[i] %= MOD;
     }
 
-    // for (auto h : hash) {
-    //     cout << h << ' ';
-    // }
-    // cout << '\n';
-
-    // for (auto h : rev_hash) {
-    //     cout << h << ' ';
-    // }
-    // cout << '\n';
-    // cout << '\n';
-
     vector<size_t> ans;
 
     for (size_t i = (n + 1) / 2; i <= n; ++i) {
-        // cout << i << ' ';
         size_t real = n - i;
         uint64_t real_hash = (real != 0 ? hash[real - 1] : 0);
-        // cout << real << ' ' << real_hash << ' ';
 
         size_t j = i - 1;
         int64_t mirror_hash = rev_hash[j];
-        // cout << mirror_hash << ' ';
         if (j >= real) {
             mirror_hash -= (rev_hash[j - real] * poly_deg[real]) % MOD;
             mirror_hash += MOD;
             mirror_hash %= MOD;
         }
-        // cout << mirror_hash << ' ';
-        // cout << static_cast<int64_t>(real_hash) - mirror_hash << ' ';
         if (real_hash == mirror_hash) {
             ans.push_back(i);
         }
-        // cout << '\n';
     }
 
     for (auto cnt : ans) {
