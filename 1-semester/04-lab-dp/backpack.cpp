@@ -1,4 +1,3 @@
-// #pragma GCC optimize("Ofast")
 #include <iostream>
 #include <cmath>
 #include <vector>
@@ -16,8 +15,6 @@
 #include <bitset>
 #include <stack>
 #include <climits>
-
-// continue push_back setprecision __builtin_popcount
 
 using namespace std;
 
@@ -88,13 +85,6 @@ void solve() {
 			dp[i][j] = max(dp[i - 1][j],  (j - w[i - 1] < 0 ? -oo : dp[i - 1][j - w[i - 1]] + c[i - 1]));
 		}
 	}
-
-	// for (int i = 1; i <= n; i++) {
-	// 	for (int j = 0; j <= m; j++) {
-	// 		cout << dp[i][j] << ' ';
-	// 	}
-	// 	cout << '\n';
-	// }
 
 	vector<int> ans;
 	int i = n, j = m;

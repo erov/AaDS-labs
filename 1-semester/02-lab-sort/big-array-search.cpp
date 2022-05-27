@@ -15,11 +15,6 @@ void ans(ll x) {
 }
 
 int main() {
-	// #ifdef HOME
-	// 	freopen("home.in", "r", stdin);
-	// 	freopen("home.out", "w", stdout);
-	// #endif
-
 	ios_base::sync_with_stdio(false);
 
 	ll x, m;

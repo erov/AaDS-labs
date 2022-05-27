@@ -1,4 +1,3 @@
-// #pragma GCC optimize("Ofast")
 #include <iostream>
 #include <cmath>
 #include <vector>
@@ -16,8 +15,6 @@
 #include <bitset>
 #include <stack>
 #include <climits>
-
-// continue push_back setprecision __builtin_popcount
 
 using namespace std;
 
@@ -93,14 +90,6 @@ void solve() {
 			}
 		}
 	}
-
-	// for (int mask = 0; mask < (1 << n); mask++) {
-	// 	cout << mask << ": ";
-	// 	for (int i = 0; i < n; i++) {
-	// 		cout << dp[mask][i] << ' ';
-	// 	}
-	// 	cout << '\n';
-	// }
 
 	ll ans = oo;
 	for (int i = 0; i < n; i++) {

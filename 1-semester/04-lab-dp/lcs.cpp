@@ -1,4 +1,3 @@
-// #pragma GCC optimize("Ofast")
 #include <iostream>
 #include <cmath>
 #include <vector>
@@ -16,8 +15,6 @@
 #include <bitset>
 #include <stack>
 #include <climits>
-
-// continue push_back setprecision __builtin_popcount
 
 using namespace std;
 
@@ -105,14 +102,6 @@ void recover(string &a, string &b, string &ans, int al, int ar, int bl, int br) 
 	calculate(left, a, b, al, am, bl, br, 0);
 	calculate(right, a, b, am, ar, bl, br, 1);
 
-	// cout << al << ' ' << am << '\n' << bl << ' ' << br << '\n';
-	// cout << a.substr(al, ar - am) << '\n';
-	// cout << << b.substr(bl, br - bl) << '\n';
-	// for (int i = 0; i < size(b); i++) {
-	// 	cout << left[i] << ' ';
-	// }
-	// cout << "\n\n";
-
 	int mx = -oo, bm = -1;
 	for (int i = 1; i < m; i++) {
 		if (left[i] + right[m - i] > mx) {
@@ -129,8 +118,6 @@ void recover(string &a, string &b, string &ans, int al, int ar, int bl, int br) 
 		mx = right[m];
 		bm = bl;
 	}
-
-	// cout << "border: " << bm << " max: " << mx << '\n';
 
 	recover(a, b, ans, al, am, bl, bm);
 	recover(a, b, ans, am, ar, bm, br);

@@ -1,4 +1,3 @@
-// #pragma GCC optimize("Ofast")
 #include <iostream>
 #include <cmath>
 #include <vector>
@@ -16,8 +15,6 @@
 #include <bitset>
 #include <stack>
 #include <climits>
-
-// continue push_back setprecision __builtin_popcount
 
 using namespace std;
 
@@ -123,21 +120,18 @@ void solve() {
 	}
 
 	for (int i = 0; i < n - 1; i++) {
-		// cout << e[i] << '\n';
 		m -= e[i] * cost[i].f;
 	}
-	// cout << '\n';
 
 	if (m < 0) {
 		cout << 0;
 		return;
 	}
 
-	// cout << "m=" << m << '\n';
 
 
 	const int mod = 1e9 + 7;
-	vector<int> dp((int) m + 1, 0);  // sum - cnt
+	vector<int> dp((int) m + 1, 0);
 	dp[0] = 1;
 
 	for (int i = 0; i < n - 1; i++) {

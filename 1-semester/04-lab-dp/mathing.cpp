@@ -1,4 +1,3 @@
-// #pragma GCC optimize("Ofast")
 #include <iostream>
 #include <cmath>
 #include <vector>
@@ -16,8 +15,6 @@
 #include <bitset>
 #include <stack>
 #include <climits>
-
-// continue push_back setprecision __builtin_popcount
 
 using namespace std;
 
@@ -97,10 +94,6 @@ void solve() {
 	vector<pair<ll, ll>> dp(n, {0, 0});
 
 	dfs(g, dp, 0, -1);
-
-	// for (int i = 0; i < n; i++) {
-	// 	cout << dp[i].f << ' ' << dp[i].s << '\n';
-	// }
 
 	cout << max(dp[0].f, dp[0].s);
 }

@@ -1,4 +1,3 @@
-// #pragma GCC optimize("Ofast")
 #include <iostream>
 #include <cmath>
 #include <vector>
@@ -16,8 +15,6 @@
 #include <bitset>
 #include <stack>
 #include <climits>
-
-// continue push_back setprecision __builtin_popcount
 
 using namespace std;
 
@@ -113,14 +110,6 @@ void solve() {
 		vector<vector<ll>> res = binpow(m, n, MOD);
 		vector<vector<ll>> base(1, vector<ll> (5, 1));
 		res = mul(base, res, MOD);
-
-		// for (auto i : res) {
-		// 	for (auto j : i) {
-		// 		cout << j << ' ';
-		// 	}
-		// 	cout << '\n';
-		// }
-		// cout << '\n';
 
 		ll ans = 0;
 		for (auto i : res) {

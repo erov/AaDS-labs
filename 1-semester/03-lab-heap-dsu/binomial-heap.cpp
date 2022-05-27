@@ -160,8 +160,6 @@ int get_min(int heap_id) {
 	return res;
 }
 
-// debug:
-
 void print_node(node *t) {
 	if (!t) {
 		return;
@@ -223,12 +221,4 @@ int main() {
 				extract_min(--a);
 		}
 	}
-
-	// for (auto it : heap[1]) {
-	// 	cout << (it == nullptr);
-	// }
-	// cout << '\n';
-
-	// print_heap(0);
-	// print_heap(1);
 }

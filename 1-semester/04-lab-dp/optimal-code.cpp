@@ -1,4 +1,3 @@
-// #pragma GCC optimize("Ofast")
 #include <iostream>
 #include <cmath>
 #include <vector>
@@ -16,8 +15,6 @@
 #include <bitset>
 #include <stack>
 #include <climits>
-
-// continue push_back setprecision __builtin_popcount
 
 using namespace std;
 
@@ -70,17 +67,7 @@ void recover(vector<short> &code, vector<vector<int>> &opt, int l, int r) {
 		cout << '\n';
 		return;
 	}
-	// ll len = sum[r - 1] - (l ? sum[l - 1] : 0LL);
-	// for (int m = l + 1; m < r; m++) {
-	// 	if (dp[l][m] + dp[m][r] + len == dp[l][r]) {
-	// 		code.push_back(0);
-	// 		recover(code, dp, sum, l, m);
-	// 		code.back() = 1;
-	// 		recover(code, dp, sum, m, r);
-	// 		code.pop_back();
-	// 		break;
-	// 	}
-	// }
+
 	int m = opt[l][r];
 	code.push_back(0);
 	recover(code, opt, l, m);
@@ -105,11 +92,6 @@ void solve() {
 		sum[i] = a[i] + (i ? sum[i - 1] : 0LL);
 	}
 
-	// for (ll x : sum) {
-	// 	cout << x << ' ';
-	// }
-	// cout << '\n';
-
 	for (int l = 0; l < n; l++) {
 		dp[l][l + 1] = 0;
 		opt[l][l + 1] = l;
@@ -119,7 +101,6 @@ void solve() {
 		for (int l = 0; l + len <= n; l++) {
 			int r = l + len;
 			for (int m = opt[l][r - 1]; m < opt[l + 1][r] + 1; m++) {
-				// dp[l][r] = min(dp[l][r], dp[l][m] + dp[m][r]);
 				if (dp[l][m] + dp[m][r] <= dp[l][r]) {
 					dp[l][r] = dp[l][m] + dp[m][r];
 					opt[l][r] = m;
@@ -128,13 +109,6 @@ void solve() {
 			dp[l][r] += sum[r - 1] - (l ? sum[l - 1] : 0LL);
 		}
 	}
-
-	// for (int i = 0; i < n; i++) {
-	// 	for (int j = 0; j < n + 1; j++) {
-	// 		cout << dp[i][j] << ' ';
-	// 	}
-	// 	cout << '\n';
-	// }
 
 	cout << dp[0][n] << '\n';
 

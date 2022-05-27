@@ -1,4 +1,3 @@
-// #pragma GCC optimize("Ofast")
 #include <iostream>
 #include <cmath>
 #include <vector>
@@ -16,8 +15,6 @@
 #include <bitset>
 #include <stack>
 #include <climits>
-
-// continue push_back setprecision __builtin_popcount
 
 using namespace std;
 
@@ -91,15 +88,6 @@ ll calculate(vector<int> &a, vector<vector<int>> &g, vector<bool> &banned, int s
 		res += dp[full][i];
 	}
 
-	// for (int mask = 0; mask < (1 << n); mask++) {
-	// 	cout << mask << ": ";
-	// 	for (int last = 0; last < n; last++) {
-	// 		cout << dp[mask][last] << ' ';
-	// 	}
-	// 	cout << '\n';
-	// }
-	// cout << '\n';
-
 	return res;
 }
 
@@ -124,15 +112,6 @@ void solve() {
 		}
 	}
 
-	// for (int i = 0; i < n; i++) {
-	// 	cout << a[i] << ": ";
-	// 	for (int j : g[i]) {
-	// 		cout << a[j] << ' ';
-	// 	}
-	// 	cout << '\n';
-	// }
-	// cout << '\n';
-
 	vector<bool> banned(n, false);
 	vector<int> ans(n, -1);
 	for (int i = 0; i < n; i++) {
@@ -141,7 +120,6 @@ void solve() {
 				continue;
 			}
 			ll cnt = calculate(a, g, banned, cur);
-			// cout << i << ' ' << a[cur] << ' ' << cnt << ' ' << m << '\n';
 			if (cnt >= m) {
 				ans[i] = a[cur];
 				banned[cur] = true;
@@ -155,13 +133,6 @@ void solve() {
 			return;
 		}
 	}
-
-	// for (auto i : ans) {
-	// 	cout << i << ' ';
-	// }
-	// cout << '\n';
-
-	// cout << m << '\n';
 
 	for (auto i : ans) {
 		cout << i << ' ';
