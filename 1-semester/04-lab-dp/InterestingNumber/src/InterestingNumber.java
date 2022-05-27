@@ -56,14 +56,6 @@ public class InterestingNumber {
                 }
             }
 
-//            for (int i = 0; i < 10; i++) {
-//                for (int j = 0; j <= n; j++) {
-//                    System.out.print(dp[i][j] + " ");
-//                }
-//                System.out.println();
-//            }
-//            System.out.println();
-
             if (sum != n) {
                 for (int i = 0; i < 9; i++) {
                     dp[i] = Arrays.copyOf(dp[i + 1], n + 1);
@@ -72,14 +64,6 @@ public class InterestingNumber {
                     dp[9][i] = base;
                 }
             }
-
-//            for (int i = 0; i < 10; i++) {
-//                for (int j = 0; j <= n; j++) {
-//                    System.out.print(dp[i][j] + " ");
-//                }
-//                System.out.println();
-//            }
-//            System.out.println();
         }
 
         System.out.println(dp[0][0]);

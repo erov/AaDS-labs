@@ -23,7 +23,6 @@ public class CutePatterns2 {
             dp[i] = new long[sz];
             for (int j = 0; j < sz; j++) {
                 dp[i][j] = 1;
-//                System.out.println(i + " " + j);
                 for (int k = 1; k < m; k++) {
                     List<Integer> tmp = List.of((i & (1 << k)), (j & (1 << k)), (j & (1 << (k - 1))), (i & (1 << (k - 1))));
                     int zero = 0;
@@ -34,13 +33,6 @@ public class CutePatterns2 {
                 }
             }
         }
-
-//        for (var i : dp) {
-//            for (var j : i) {
-//                System.out.print(j + " ");
-//            }
-//            System.out.println();
-//        }
 
         dp = binpow(dp, n, mod);
 

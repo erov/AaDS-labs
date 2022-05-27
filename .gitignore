@@ -51,9 +51,15 @@
 1-semester/04-lab-dp/home.out
 1-semester/04-lab-dp/*.exe
 1-semester/04-lab-dp/*.out
-
-
-
+1-semester/04-lab-dp/CutePatterns2/.idea
+1-semester/04-lab-dp/CutePatterns2/out
+1-semester/04-lab-dp/CutePatterns2/*.iml
+1-semester/04-lab-dp/CutePatterns3/.idea
+1-semester/04-lab-dp/CutePatterns3/out
+1-semester/04-lab-dp/CutePatterns3/*.iml
+1-semester/04-lab-dp/InterestingNumber/.idea
+1-semester/04-lab-dp/InterestingNumber/out
+1-semester/04-lab-dp/InterestingNumber/*.iml
 
 
 4-semester/input.txt
