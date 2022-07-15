@@ -24,3 +24,6 @@ Warning: достаточно во многих местах можно встр
   - [Условия](3-semester/lab-graph/lab-graph.pdf)
 * [Строки](3-semester/lab-string)
   - [Условия](3-semester/lab-string/lab-string.pdf)
+## 4 семестр
+* [Паросочетания, потоки и связанные темы, задача о назначениях, FFT](/4-semester)
+  - [Условия](/4-semester/statements.pdf)
